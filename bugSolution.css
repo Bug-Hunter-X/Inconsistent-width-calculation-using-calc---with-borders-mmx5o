@@ -1,0 +1,10 @@
+The solution is to adjust the `calc()` expression to include the border width:
+
+```css
+div {
+  width: calc(100% - 20px - 20px); /* Subtract border width from both sides */
+  border: 10px solid black;
+}
+```
+
+By subtracting the total border width (20px in this case, 10px on each side) from the calculation, the width is accurately computed and rendered consistently across browsers.
