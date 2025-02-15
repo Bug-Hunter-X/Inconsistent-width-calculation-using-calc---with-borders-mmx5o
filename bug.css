@@ -1,0 +1,10 @@
+The following CSS code causes unexpected behavior in some browsers:
+
+```css
+div {
+  width: calc(100% - 20px);
+  border: 10px solid black;
+}
+```
+
+The `calc()` function is used to calculate the width of the div. However, some browsers might misinterpret the calculation when the border is added, resulting in incorrect rendering.
